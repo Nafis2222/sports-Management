@@ -1,0 +1,101 @@
+{
+    "sports_data": [
+      {
+        "id": 1,
+        "coach": {
+          "image": "https://i.ibb.co/GW5wzMs/basket.jpg",
+          "name": "John Smith"
+        },
+        "event": {
+          "name": "Basketball Tournament",
+          "image": "https://i.ibb.co/FgLmL9c/data1.jpg"
+        },
+        "description": "Join us for our premier basketball tournament, where we provide top-notch coaching and facilities for players of all skill levels. Our experienced coach, John Smith, will guide you to unleash your potential on the court. The tournament features intense matchups and slam dunks, offering a perfect opportunity for basketball enthusiasts to showcase their skills and passion for the game. We pride ourselves on creating an unforgettable experience for players and fans alike. Come be a part of the excitement and elevate your game with us.",
+        "date": "2023-11-15",
+        "bgColor": "#3998da",
+        "textColor": "#ffffff",
+        "buttonBgColor": "#e74c3c"
+      },
+      {
+        "id": 2,
+        "coach": {
+          "image": "https://i.ibb.co/QXhwt7n/scorrer.jpg",
+          "name": "Emily Johnson"
+        },
+        "event": {
+          "name": "Soccer Championship",
+          "image": "https://i.ibb.co/VqScMgM/data2.jpg"
+        },
+        "description": "Experience the pinnacle of soccer excellence at our championship event. Emily Johnson, our accomplished coach, leads our teams to victory with a focus on skill development and teamwork. The championship showcases the beautiful game of soccer with thrilling matches, skillful plays, and unforgettable goals. It's not just an event; it's a celebration of soccer. Players and fans alike will be enthralled by the quality of play and the electric atmosphere in our world-class stadium. Join us and be a part of the soccer legacy we are building.",
+        "date": "2023-12-10",
+        "bgColor":  "#2dd4bf",
+        "textColor": "#ffffff",
+        "buttonBgColor": "#E527B2"
+      },
+      {
+        "id": 3,
+        "coach": {
+          "image": "https://i.ibb.co/Gcw8Zq4/cricket.jpg",
+          "name": "Michael Davis"
+        },
+        "event": {
+          "name": "Cricket Tournament",
+          "image": "https://i.ibb.co/W51NpB4/data3.jpg"
+        },
+        "description": "Get ready for an exciting cricket tournament that celebrates the gentleman's game. Our coach, Michael Davis, brings his expertise to the field, offering players a chance to hone their cricketing skills. The tournament features thrilling matches, powerful batting, and strategic bowling. Cricket enthusiasts, both players and fans, are invited to join us for an unforgettable experience. Witness the elegance of cricket at its best, with top teams competing for glory. Don't miss this chance to be part of cricket history.",
+        "date": "2023-10-05",
+        "bgColor": "#e67e22",
+        "textColor": "#ffffff",
+        "buttonBgColor": "#3498db"
+      },
+      {
+        "id": 4,
+        "coach": {
+          "image": "https://i.ibb.co/qFWL3BN/football.jpg",
+          "name": "Sarah Wilson"
+        },
+        "event": {
+          "name": "Football Championship",
+          "image": "https://i.ibb.co/PtzrKn8/data4.jpg"
+        },
+        "description": "Join us for the ultimate football champion that brings together the best teams from around the world. Coach Sarah Wilson leads our teams with a focus on skill and strategy. The championship showcases the artistry of football with thrilling matches, incredible goals, and tactical plays. Whether you're a player or a fan, this event is a must-attend. Our championship features an international lineup of top-tier football clubs competing for glory. The matches will be played in our world-class stadium, providing an electric atmosphere that will leave you on the edge of your seat. The passion for football knows no bounds, and we invite you to be a part of this remarkable sporting journey. Come witness history in the making!",
+        "date": "2023-09-15",
+        "bgColor": "#f39c12",
+        "textColor": "#ffffff",
+        "buttonBgColor": "#27ae60"
+      },
+      {
+        "id": 5,
+        "coach": {
+          "image": "https://i.ibb.co/v32gSc4/swimming.jpg",
+          "name": "David Brown"
+        },
+        "event": {
+          "name": "Swimming Competition",
+          "image": "https://i.ibb.co/Br6L896/data5.jpg"
+        },
+        "description": "Dive into our Swimming Competition and experience the thrill of the pool. Our event is designed for both competitive swimmers and those looking for aquatic fun. Our crystal-clear waters offer the perfect setting for exciting races and underwater adventures. Join us for a day of aquatic excitement, where the love of swimming takes center stage. Make a splash and create lasting memories with us!",
+        "date": "2023-08-20",
+        "bgColor": "#9b59b6",
+        "textColor": "#ffffff",
+        "buttonBgColor": "#e74c3c"
+      },
+      {
+        "id": 6,
+        "coach": {
+          "image": "https://i.ibb.co/MBKzBGR/athlet.jpg",
+          "name": "Linda Jackson"
+        },
+        "event": {
+          "name": "Athletics Meet",
+          "image": "https://i.ibb.co/hc5W8qz/data6.jpg"
+        },
+        "description": "Run, jump, and throw in our exciting Athletics Meet. Coach Linda Jackson leads the way in showcasing athletic prowess. It's not just about winning; it's about pushing your limits and inspiring others. Our event brings athletes from various disciplines together for thrilling competitions and a celebration of sportsmanship. The cheers from the crowd will fuel your determination as you strive for greatness. Join us and be a part of the excitement!",
+        "date": "2023-07-05",
+        "bgColor": "#2c7e50",
+        "textColor": "#ffffff",
+        "buttonBgColor": "#f39c12"
+      }
+    ]
+  }
+  
