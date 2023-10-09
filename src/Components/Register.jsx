@@ -1,6 +1,8 @@
 import { useContext } from "react";
 import { AuthContext } from "./AuthProvider";
 import { Link } from "react-router-dom";
+import { ToastContainer, toast } from "react-toastify";
+import 'react-toastify/dist/ReactToastify.css';
 
 const Register = () => {
     const {createUser} = useContext(AuthContext)
@@ -18,6 +20,9 @@ const Register = () => {
         createUser(email,password)
         .then(res =>{
             const user = res.user
+            if(user){
+            toast('You have successfully registered')
+            }
             console.log(user)
         })
         .catch(error =>{
@@ -67,7 +72,7 @@ const Register = () => {
       <p className=" mb-3 text-center">Already have an account ?<Link to="/login" className="link link-accent">Login</Link></p>
 
     </div>
-   
+   <ToastContainer/>
   </div>
 </div>
             

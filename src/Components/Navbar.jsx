@@ -1,7 +1,19 @@
-import React from 'react';
-import { NavLink } from 'react-router-dom';
+import React, { useContext } from 'react';
+import { Link, NavLink } from 'react-router-dom';
+import { AuthContext } from './AuthProvider';
 
 const Navbar = () => {
+const {userFinal,LogOut} = useContext(AuthContext)
+    const handleClick = () =>{
+        LogOut()
+        .then(res =>{
+            console.log(res.user)
+        })
+        .catch(error =>{
+            console.log(error)
+        })
+    }
+
     const navlinks = <>
     <li><NavLink to="/">Home </NavLink></li>
     <li><NavLink to="/login">Login</NavLink></li>
@@ -20,8 +32,11 @@ const Navbar = () => {
                 {navlinks}
               </ul>
             </div>
-            <img className='w-16 h-12 rounded-full' src="https://i.ibb.co/hD4QhpH/sports-header.jpg" alt="" />
+           <div className='grid grid-cols-1 md:grid-cols-2'>
+           <img className='w-16 h-12 rounded-full' src="https://i.ibb.co/hD4QhpH/sports-header.jpg" alt="" />
             <a className="btn btn-ghost normal-case text-xl">Sports Events</a>
+           </div>
+           
           </div>
           <div className="navbar-center hidden lg:flex">
             <ul className="menu menu-horizontal px-1">
@@ -29,8 +44,16 @@ const Navbar = () => {
             </ul>
           </div>
           <div className="navbar-end">
-            <a className="btn">Button</a>
-          </div>
+          {
+                userFinal ? <><img className='w-12 h-12 mr-1 rounded-full' src="https://i.ibb.co/L97LMXw/own-pic.jpg" alt="" />
+                <Link><button onClick={handleClick} className='btn'>Sign out</button></Link></>
+                
+                : <>
+                <img className='w-12 mr-2 h-12' src="https://i.ibb.co/J50xnVF/user.png" alt="" />
+                <Link to="/login"><button className='btn'>Login</button></Link>
+                </>
+
+            }          </div>
         </div>
             
         </div>

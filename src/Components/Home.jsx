@@ -1,5 +1,5 @@
 import { Button } from "bootstrap";
-import { Link, useLoaderData } from "react-router-dom";
+import { Link, useLoaderData, useParams } from "react-router-dom";
 import Banner from "./Banner";
 import Footer from "./Footer";
 import OurOffer from "./OurOffer";
@@ -8,11 +8,13 @@ import SeviceList from "./SeviceList";
 
 const Home = () => {
 
+
     const data = useLoaderData()
     const services = data.sports_data
     console.log(services)
   
     return (
+
         <div>
            <Banner></Banner>
         <OurOffer></OurOffer>

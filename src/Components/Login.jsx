@@ -1,31 +1,47 @@
 import { useContext } from "react";
 import { AuthContext } from "./AuthProvider";
 import { Link } from "react-router-dom";
+import { ToastContainer, toast } from "react-toastify";
 
 const Login = () => {
     const {logIn,signIn} = useContext(AuthContext)
+    
+
+
     const handleLogin = e =>{
         e.preventDefault()
-        
-        const form = new FormData(e.currentTarget)
+              const form = new FormData(e.currentTarget)
         const email = form.get('Email')
         const password = form.get('password')
         console.log(email,password)
-        logIn(email,password)
-        .then(res => {
-            console.log(res.user)
-        })
-        .catch(error =>{
-            console.log(error)
-        })
+            logIn(email,password)
+            .then(res => {
+                const user = res.user
+                if(user){
+                    toast('Login !!! Successfully')
+                }
+                console.log(user)
+            })
+            .catch(error =>{
+                console.log(error)
+            })
+        
+   
+       
+
+    }
+    const handleGoogle = () =>{
         signIn()
         .then(res =>{
-            console.log(res.user)
+           const user = res.user
+           if(user){
+            toast('Ok,You are on the way of Google Login')
+           }
+            console.log(user)
         })
         .catch(error =>{
             console.log(error)
         })
-
     }
     return (
         <div>
@@ -53,16 +69,17 @@ const Login = () => {
           </label>
         </div>
         <div className="form-control mt-6">
-          <button  className="btn btn-accent">Login</button>
+          <h1 ><button  className="btn btn-accent w-full">Login</button></h1>
         </div>
       </form>
       <p className=" mb-3 text-center">Don't have account ?<Link to="/register" className="link link-accent">Register</Link></p>
       <h1 className="text-center mb-2 font-medium">Or,</h1>
-      <button className=" btn btn-active hover:bg-green-600 mx-2">  Continue with Google</button>
+      <button onClick={handleGoogle} className=" btn btn-active hover:bg-green-600 mx-2">  Continue with Google</button>
     </div>
    
   </div>
 </div>
+<ToastContainer></ToastContainer>
         </div>
     );
 };

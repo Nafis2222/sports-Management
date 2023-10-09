@@ -19,11 +19,6 @@ const SeviceList = ({service}) => {
                      <p className="my-3 mx-1 text-slate-950">{description.slice(0,150)}<br/><Link to={`/event/${id}`} className="link mx-2 link-primary"><button className="btn btn-primary mr-4 w-full">Read More</button></Link></p>
                      : <p>{description}</p>
                 }
-                
-                
-                {/* <div className="card-actions justify-end">
-                  <button className="btn btn-primary">Learn now!</button>
-                </div> */}
               </div>
             </div>        
         </div>
