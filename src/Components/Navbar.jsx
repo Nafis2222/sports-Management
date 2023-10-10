@@ -17,7 +17,9 @@ const {userFinal,LogOut} = useContext(AuthContext)
     const navlinks = <>
     <li><NavLink to="/">Home </NavLink></li>
     <li><NavLink to="/login">Login</NavLink></li>
-    <li><NavLink to="/cart">Cart</NavLink></li>
+    <li><NavLink to="/gallery">Gallery</NavLink></li>
+    <li><NavLink to="/about">About Us</NavLink></li>
+
     
     </>
     return (

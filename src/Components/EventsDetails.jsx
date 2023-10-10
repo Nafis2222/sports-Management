@@ -4,7 +4,7 @@ import Single from "./Single";
 
 const EventsDetails = () => {
     const [detailCard, setCard] = useState({})
-
+     const anarray = [];
     const {id} = useParams()
     const idInt = parseFloat(id)
 console.log(idInt)

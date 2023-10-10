@@ -1,0 +1,44 @@
+/* AboutUs.css */
+
+.about-us {
+    background: linear-gradient(to bottom, #ff6b6b, #605c10); /* Gradient background */
+    padding: 80px 0;
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+  
+  .about-us-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .about-us-text {
+    flex: 1;
+    text-align: left;
+    padding-right: 20px;
+  }
+  
+  .about-us-heading {
+    font-size: 36px;
+    color: #fff;
+  }
+  
+  .about-us-description {
+    font-size: 18px;
+    line-height: 1.5;
+    color: #fff;
+  }
+  
+  .about-us-image {
+    flex: 1;
+    /* Add unique background image or illustration here */
+    /* Example: background: url('your-image-url.jpg') no-repeat center/cover; */
+  }
+  
+  /* Customize the styles further to create a unique and colorful design */
+  
